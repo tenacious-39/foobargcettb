@@ -98,7 +98,7 @@ app.get("/login/failed", function (req, res) {
 
 app.get("/auth/google/dashboard",
     passport.authenticate("google", {
-        successRedirect: '/auth/success',
+        successRedirect: '/auth/dashboard',
         failureRedirect: "/login/failed"
     })
 );
@@ -126,9 +126,9 @@ app.post("/updateHandles", function (req, res) {
 }
 );
 
-app.get("/", function (req, res) {
-    res.send("<h1>Hello World</h1>");
-})
+// app.get("/", function (req, res) {
+//     res.send("<h1>Hello World</h1>");
+// })
 
 if (process.env.NODE_ENV == "production") {
     const path = require('path');

@@ -67,6 +67,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/resource" element={<Resource />} />
           <Route path="/ide" element={<Ide />} />
+          <Route path="/auth/dashboard" element={<Dashboard user={user} setUser={setUser} />} />
           <Route path="/auth/google/dashboard" element={<Dashboard user={user} setUser={setUser} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/dashboard/kickstart" element={<Kickstart />} />
