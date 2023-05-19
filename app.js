@@ -75,7 +75,7 @@ app.get("/auth/google",
 );
 app.get("/logout", function (req, res) {
     req.logout();
-    res.redirect(process.env.CLIENT_REDIRECT_URL);
+    res.redirect("/");
 });
 app.get("/login/success", function (req, res) {
     console.log(req.user);
