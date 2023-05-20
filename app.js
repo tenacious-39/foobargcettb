@@ -98,8 +98,7 @@ app.get("/login/failed", function (req, res) {
 
 app.get("/auth/google/dashboard",
     passport.authenticate("google", {
-        successRedirect: '/auth/dashboard',
-        successRedirect: '/',
+        successRedirect: '/dashboard',
         failureRedirect: "/login/failed"
     })
 );
