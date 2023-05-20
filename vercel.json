@@ -9,7 +9,6 @@
         {
             "src": "/.*",
             "dest": "app.js"
-<<<<<<< HEAD
         }
     ],
     "rewrites": [
@@ -19,14 +18,3 @@
         }
     ]
 }
-=======
-        },
-        
-    ], 
-    "rewrites": [
-        { 
-            "source": "/(.*)", 
-            "destination": "/" 
-        }] 
-}
->>>>>>> 52105f8fafafb1bc3c2100fbe2479eec1f0fa6fb
