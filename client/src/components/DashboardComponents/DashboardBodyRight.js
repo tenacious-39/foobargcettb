@@ -133,6 +133,7 @@ function DashboardBodyRight({ user, setUser }) {
                                     id="demo-simple-select"
                                     label="Update Profile Handles"
                                     inputProps={{ 'aria-label': 'Without label' }}
+                                    multiple
                                 >
                                     <div className="container">
                                         <form onSubmit={handleSubmit}>
